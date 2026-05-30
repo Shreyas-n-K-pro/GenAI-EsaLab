@@ -1,0 +1,48 @@
+{
+    "topic_id": "ai_jobs",
+    "articles": [
+        {
+            "publisher": "MSNBC",
+            "title": "AI Is Coming for Your Job, and No One Is Preparing Workers",
+            "bias_label": "Left",
+            "bias_score": -2,
+            "bias_explanation": "Progressive framing and social-policy emphasis."
+        },
+        {
+            "publisher": "CNN",
+            "title": "AI Reshaping the Job Market Faster Than Expected",
+            "bias_label": "Lean Left",
+            "bias_score": -1,
+            "bias_explanation": "Moderately progressive framing."
+        },
+        {
+            "publisher": "Associated Press",
+            "title": "Study: AI Could Automate 30% of Work Hours by 2030",
+            "bias_label": "Lean Left",
+            "bias_score": -1,
+            "bias_explanation": "Moderately progressive framing."
+        },
+        {
+            "publisher": "The Wall Street Journal",
+            "title": "AI Workforce Transformation: Economic Impact Analysis",
+            "bias_label": "Center",
+            "bias_score": 0,
+            "bias_explanation": "Attempts balanced reporting."
+        },
+        {
+            "publisher": "National Review",
+            "title": "AI Job Disruption Is Overhyped by Media Fearmongers",
+            "bias_label": "Right",
+            "bias_score": 2,
+            "bias_explanation": "Conservative framing and traditional-policy emphasis."
+        }
+    ],
+    "missing_angle": "Multiple viewpoints represented.",
+    "perspective_difference": [
+        "MSNBC emphasizes: AI Is Coming for Your Job, and No One Is Preparing Workers",
+        "CNN emphasizes: AI Reshaping the Job Market Faster Than Expected",
+        "Associated Press emphasizes: Study: AI Could Automate 30% of Work Hours by 2030",
+        "The Wall Street Journal emphasizes: AI Workforce Transformation: Economic Impact Analysis",
+        "National Review emphasizes: AI Job Disruption Is Overhyped by Media Fearmongers"
+    ]
+}
