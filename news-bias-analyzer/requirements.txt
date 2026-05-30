@@ -1,0 +1,22 @@
+# News Bias Analyzer — Requirements
+# Core dependencies for the data ingestion layer and full MVP
+
+# Data handling
+pandas>=2.0.0
+
+# Visualization (for downstream viz.py)
+plotly>=5.18.0
+matplotlib>=3.8.0
+
+# Streamlit (for app.py — not needed for data layer alone)
+streamlit>=1.30.0
+
+# Text processing
+nltk>=3.8.0
+
+# HTTP requests (for fact-check engine)
+requests>=2.31.0
+
+# Optional: LLM integration (if API key available)
+# openai>=1.0.0
+# google-generativeai>=0.3.0

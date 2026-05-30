@@ -1,0 +1,6 @@
+topic_id,topic,category,num_articles,publishers,bias_labels
+ai_jobs,AI Impact on Employment,TECHNOLOGY,5,"Associated Press, CNN, MSNBC, National Review, The Wall Street Journal","Center, Lean Left, Left, Right"
+budget_2024,Federal Budget Battle,POLITICS,6,"CNN, Daily Wire, Fox News, HuffPost, Reuters, The Hill","Center, Lean Left, Left, Right"
+climate_policy,Climate Change Policy,ENVIRONMENT,5,"BBC, Bloomberg, Breitbart, The Guardian, The Washington Post","Center, Lean Left, Right"
+healthcare_costs,Healthcare Affordability,POLITICS,5,"Forbes, Jacobin, The Blaze, The Washington Post, USA Today","Center, Lean Left, Left, Right"
+immigration_reform,Immigration Policy Reform,POLITICS,6,"Associated Press, Fox News, NPR, The New York Times, Vox, Washington Examiner","Lean Left, Lean Right, Left, Right"

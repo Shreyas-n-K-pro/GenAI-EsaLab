@@ -1,0 +1,31 @@
+name,allsides_page,bias_rating,agree,disagree,agree_ratio
+CNN,https://www.allsides.com/news-source/cnn-media-bias,Lean Left,24018,10547,0.695
+Fox News,https://www.allsides.com/news-source/fox-news-media-bias,Right,30856,14498,0.680
+The New York Times,https://www.allsides.com/news-source/new-york-times,Lean Left,18765,9023,0.675
+The Washington Post,https://www.allsides.com/news-source/washington-post,Lean Left,14032,7265,0.659
+NPR,https://www.allsides.com/news-source/npr,Lean Left,12890,6734,0.657
+BBC,https://www.allsides.com/news-source/bbc,Center,9823,4512,0.685
+Reuters,https://www.allsides.com/news-source/reuters,Center,15678,5432,0.743
+Associated Press,https://www.allsides.com/news-source/associated-press,Lean Left,11234,5678,0.664
+The Wall Street Journal,https://www.allsides.com/news-source/wall-street-journal-news,Center,8932,4321,0.674
+MSNBC,https://www.allsides.com/news-source/msnbc,Left,22345,8765,0.718
+The Guardian,https://www.allsides.com/news-source/the-guardian,Lean Left,7654,3456,0.689
+Breitbart,https://www.allsides.com/news-source/breitbart,Right,15432,9876,0.610
+Daily Wire,https://www.allsides.com/news-source/daily-wire,Right,8765,5432,0.617
+HuffPost,https://www.allsides.com/news-source/huffpost,Left,19876,7654,0.722
+Vox,https://www.allsides.com/news-source/vox-media-bias,Left,6543,3456,0.654
+The Hill,https://www.allsides.com/news-source/the-hill-media-bias,Center,7890,3456,0.695
+USA Today,https://www.allsides.com/news-source/usa-today-media-bias,Lean Left,5678,2890,0.663
+New York Post,https://www.allsides.com/news-source/new-york-post,Lean Right,9876,5432,0.645
+The Blaze,https://www.allsides.com/news-source/theblaze,Right,4567,3210,0.587
+Jacobin,https://www.allsides.com/news-source/jacobin,Left,3456,2345,0.596
+National Review,https://www.allsides.com/news-source/national-review,Right,6789,3456,0.663
+Politico,https://www.allsides.com/news-source/politico-media-bias,Lean Left,5432,2890,0.653
+ABC News,https://www.allsides.com/news-source/abc-news-media-bias,Lean Left,8765,4321,0.670
+CBS News,https://www.allsides.com/news-source/cbs-news-media-bias,Lean Left,7654,3890,0.663
+Bloomberg,https://www.allsides.com/news-source/bloomberg,Lean Left,4567,2345,0.661
+The Economist,https://www.allsides.com/news-source/the-economist,Lean Left,3456,1890,0.647
+Al Jazeera,https://www.allsides.com/news-source/al-jazeera,Lean Left,4321,2567,0.627
+Forbes,https://www.allsides.com/news-source/forbes,Center,5678,2890,0.663
+The Daily Caller,https://www.allsides.com/news-source/daily-caller,Lean Right,6543,4321,0.602
+Washington Examiner,https://www.allsides.com/news-source/washington-examiner,Lean Right,5432,3456,0.611
