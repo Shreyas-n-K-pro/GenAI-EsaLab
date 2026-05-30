@@ -1,21 +1,32 @@
 import pandas as pd
 from collections import Counter
 import re
+from google import genai
+import os
 
-# OPTIONAL AI summarizer
+
+# =========================
+# GEMINI SETUP
+# =========================
+
+API_KEY = os.getenv("GEMINI_API_KEY")
+
+GEMINI_AVAILABLE = False
+
 try:
-    from transformers import pipeline
 
-    summarizer = pipeline(
-        "summarization",
-        model="facebook/bart-large-cnn"
-    )
+    client = genai.Client(api_key=API_KEY)
 
-    AI_AVAILABLE = True
+    GEMINI_AVAILABLE = True
 
 except:
-    AI_AVAILABLE = False
 
+    GEMINI_AVAILABLE = False
+
+
+# =========================
+# TEXT CLEANING
+# =========================
 
 def clean_text(text):
     """
@@ -28,6 +39,10 @@ def clean_text(text):
 
     return text.strip()
 
+
+# =========================
+# FALLBACK SUMMARIZER
+# =========================
 
 def fallback_summary(texts, max_sentences=3):
     """
@@ -64,9 +79,14 @@ def fallback_summary(texts, max_sentences=3):
     return ". ".join(top_sentences)
 
 
+# =========================
+# MAIN SUMMARY FUNCTION
+# =========================
+
 def generate_balanced_summary(article_texts):
     """
-    Generate balanced summary
+    Generate balanced summary using Gemini.
+    Fallback to rule-based summarizer.
     """
 
     cleaned_articles = [
@@ -76,26 +96,39 @@ def generate_balanced_summary(article_texts):
 
     combined_text = " ".join(cleaned_articles)
 
-    # AI summarizer
-    if AI_AVAILABLE:
+    # GEMINI SUMMARY
+    if GEMINI_AVAILABLE:
 
         try:
 
-            result = summarizer(
-                combined_text[:3000],
-                max_length=120,
-                min_length=40,
-                do_sample=False
+            prompt = f"""
+            Create a short neutral news summary
+            combining multiple perspectives.
+
+            Keep it balanced and factual.
+
+            ARTICLES:
+            {combined_text[:4000]}
+            """
+
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=prompt
             )
 
-            return result[0]["summary_text"]
+            return response.text
 
-        except:
-            pass
+        except Exception:
 
-    # fallback summary
+            print("Gemini unavailable. Using fallback summarizer.")
+
+    # FALLBACK SUMMARY
     return fallback_summary(cleaned_articles)
 
+
+# =========================
+# TESTING
+# =========================
 
 if __name__ == "__main__":
 
