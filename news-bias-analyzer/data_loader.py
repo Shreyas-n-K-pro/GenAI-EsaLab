@@ -52,7 +52,7 @@ DATA_CLEANED_DIR = _MODULE_DIR / "data" / "cleaned"
 
 # File names (configurable if the user drops in the real datasets)
 ALLSIDES_FILE = "allsides_bias_ratings.csv"
-HUFFPOST_FILE = "huffpost_news_sample.json"
+HUFFPOST_FILE = "huffpost_news_full.json"
 MULTI_PUB_FILE = "multi_publisher_articles.json"
 
 # Canonical bias labels (ordered left-to-right)
@@ -135,7 +135,7 @@ def get_bias_map(filepath: Optional[str] = None) -> dict:
 
 def load_huffpost_articles(
     filepath: Optional[str] = None,
-    max_per_category: int = 10,
+    max_per_category: Optional[int] = None,
     categories: Optional[list] = None,
 ) -> pd.DataFrame:
     """
@@ -263,7 +263,7 @@ def _normalize_publisher_name(name: str) -> str:
 
 
 def load_all_data(
-    huffpost_max_per_cat: int = 10,
+    huffpost_max_per_cat: Optional[int] = None,
     huffpost_categories: Optional[list] = None,
 ) -> pd.DataFrame:
     """
